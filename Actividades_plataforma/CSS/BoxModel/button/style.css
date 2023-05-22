@@ -1,0 +1,33 @@
+#search
+{
+	background-color:azure;
+	height: 30px;
+	width: 150px;
+	border: 1px solid darkcyan;
+    border-radius: 30px ;
+	margin: 50px 50px 5px 50px;
+    font-family: cursive;
+    color:darkcyan;
+    font-size: 15px;
+}
+#circle{
+    background-color:darkcyan;
+	height: 40px;
+	width: 40px;
+    border: 1px solid azure;
+    border-radius: 50% ;  
+	margin: 5px 5px 5px 50px;
+    color: azure;
+    font-size: larger;
+}
+#create{
+    background-color:royalblue;
+	height: 40px;
+	width: 200px;
+    border: 3px solid black;
+	margin: 5px 5px 5px 50px;
+    color: azure;
+    font-size: larger;
+    box-shadow: 5px 5px 1px rgb(0, 0, 0);
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+}

@@ -1,0 +1,53 @@
+/* Actividad Box Model: Bloques github
+Gabriela Oyarzo Escudero
+última actualización: 19 de mayo de 2023*/
+.imagen{
+    height: 200px;
+    margin: 20px;
+}
+
+#txt{
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: lighter;
+}
+
+.container{
+    background-color: rgb(59, 216, 211);
+    width: 900px;
+    height: 900px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex:1;
+    padding: 10px;
+}
+.top-box{
+    background-color: rgba(183, 121, 227, 0.597);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mid-box{
+    background-color: rgba(208, 103, 179, 0.597);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bot-box{
+    background-color: rgba(250, 116, 212, 0.597);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;}
+
+#link_gh{
+    color:dimgray;
+    text-align: center;
+    font-family:sans-serif;
+    font-weight: lighter;
+}

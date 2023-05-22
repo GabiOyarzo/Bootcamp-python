@@ -1,0 +1,64 @@
+/* Intento 1
+.container {
+    width: 720px;
+    height: 250px;
+    background-color: silver;
+}
+.col {
+    width: 220px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    display: inline-block;
+}
+*/
+/* intento 2: Recortando espacios en blanco 
+.container {
+    width: 720px;
+    height: 250px;
+    background-color: silver;
+}
+    
+.col {
+    width: 220px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    display: inline-block;
+} */
+/* Intento 3: Con flex*/
+/*
+.container {
+    width: 720px;
+    height: 250px;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+}
+    
+.col {
+    width: 220px;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+*/
+.row {
+    display: flex;
+}
+/*
+.col {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(67, 136, 136);
+}
+*/
+.col {
+    flex: 2;
+    padding: 20px;
+    margin: 10px;
+    background-color: palegreen;
+}
+
+
+
+
+

@@ -1,0 +1,37 @@
+/* Actividad Box Model: Estilos
+Gabriela Oyarzo Escudero
+última actualización: 18 de mayo de 2023*/
+h1 {    
+    background-color:  black;
+    font-style: normal;
+    text-align: left;
+    font-family: cursive;
+    font-weight: bold;
+}
+h2 {    
+    color: aliceblue;
+    background-color: rgb(116, 57, 206);
+    font-style: normal;
+    text-align: center;
+    font-family: cursive;
+    font-weight:lighter;
+    font-style: italic;
+
+
+}
+h3 {    
+    color:midnightblue;
+    background-color: rgb(123, 171, 234);
+    font-style: normal;
+    text-align: right;
+    text-decoration: underline;
+    font-family: cursive;
+
+}
+
+#my{
+color: rgb(255, 255, 255);
+}
+#cloud{
+    color: rgb(55, 210, 231);
+    }

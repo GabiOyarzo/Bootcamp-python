@@ -1,0 +1,52 @@
+/* Actividad bloques con flex
+Gabriela Oyarzo Escudero
+Última actualización: 18 de mayo de 2023*/
+
+.container{
+    width: 950px;
+    background-color: silver;
+    padding: 5px;
+
+}
+.top-nav {
+    height: 150px;
+    background-color: green;
+    margin: 5px;
+
+}
+.side-nav {
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main {
+    height: 400px;
+    width: 700px;
+    background-color: red;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px;
+
+}
+.sub-content {
+    height: 200px;
+    width: 210px;
+    background-color: yellow;
+    display: inline-block;
+    margin: 10px;
+}
+#advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: purple;
+    margin: auto;
+    padding: 10px;
+}
+.row {
+    /* TODO - what should go here? */
+}
+

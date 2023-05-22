@@ -1,0 +1,152 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: azure;
+}
+
+/* barra de navegación */
+.nav * {
+    padding: 0;
+    color: azure;
+}
+.nav  {
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav, .nav-links {
+    display: flex;
+    flex-direction: row;
+}
+.nav-links {
+    align-items: center;
+    list-style: none; 
+}
+    
+.nav a{
+    text-decoration: solid;
+    font-weight:lighter;
+    color:  rgb(167,167,167);
+    margin: 10px;
+}
+.nav  .active {  
+    color: azure; 
+    font-weight: bold;
+}
+
+.btn{
+    align-self: center;
+    background-color: rgb(23,162,184);
+	height: 30px;
+	width: 100px;
+    border: 2px solid rgb(167,167,167);
+    font-size: small;
+    font-weight: bold;
+}
+
+/* Perfil usuario */
+.contenedor_perfil {
+    width: 60%;
+    margin: 5% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjeta-usuario {
+    width: 100%;
+    background-color: azure;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 2px rgb(167,167,167);
+}
+
+.encabezado {
+    background-color: rgb(23,162,184);
+    height: 100px;
+}
+
+.card-body {
+    padding: 20px;
+}
+.card-body p {
+    text-align: start;
+    font-size: smaller;
+}
+
+#photo_user {
+    border-radius: 50%;
+    border: 5px solid azure;
+    box-shadow: 0px 0px 5px 0px black;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.icons {
+    height: 15px;
+}
+
+a {
+    color: #3a81e6;
+}
+
+
+.contenedor_educacion{
+    width: 60%;
+    margin: 5% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(167,167,167);
+    box-shadow: 0px 0px 2px 2px rgb(167,167,167);
+}
+.encabezado_edu{
+    background-color: black;
+    width: 99%;
+    border-radius: 2px;
+}
+.encabezado_edu h1{
+    color: white;
+    font-size: medium;
+    margin: 5%;
+}
+
+.card-edu{
+    width: 99%;
+    background-color: azure;
+    border-radius: 2px;
+}
+
+.card-edu h2, h3, h4{
+    margin: 10px;
+}
+.card-edu h2{
+    font-size: larger;
+}
+
+.card-edu h3{
+    font-size: medium;
+}
+
+.card-edu h4{
+    font-size: smaller;
+    color: rgb(167,167,167);
+}
+
+.contenedor_solicitudes{
+    margin: 5% ;
+    display: flexbox;
+    
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(167,167,167);
+    box-shadow: 0px 0px 2px 2px rgb(167,167,167);
+}

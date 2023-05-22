@@ -1,0 +1,47 @@
+/* Actividad Box Model: bloques
+Gabriela Oyarzo Escudero
+última actualización: 18 de mayo de 2023 */
+.container{
+    width: 950px;
+    background-color: silver;
+    margin: 10px;
+    padding: 10px;
+    height: 250px;
+    width: 400px;
+    display:block;
+}
+.top-nav {
+    height: 70px;
+    background-color: green;
+    margin-bottom: 10px;
+}
+.side-nav {
+    height: 120px;
+    width: 80px;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: top;
+}
+.main {
+    height: 160px;
+    width: 310px;
+    background-color: red;
+    display: inline-block;
+    vertical-align:text-top;
+    margin-left: 5px;
+}
+.sub-content {
+    height: 90px;
+    width: 90px;
+    background-color: yellow;
+    display: inline-block;
+    vertical-align:middle;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+#advertisement {
+    height: 50px;
+    width: auto;
+    margin: 5px;
+    background-color: purple;
+}

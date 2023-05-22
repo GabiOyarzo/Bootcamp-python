@@ -1,0 +1,98 @@
+element.style {
+}
+.left-col {
+    width: calc(100% - 375px);
+    text-align: center;
+    overflow-x: visible;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.mCustomScrollbar {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+}
+body * {
+    font-family: "Exo 2", "Lato", "Helvetica Neue", sans-serif;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+hoja de estilo de user-agent
+div {
+    display: block;
+}
+
+/* width (ancho) | height (alto):
+a {
+    width: 25px;
+  }
+  div {
+    width: 100%;
+    height: 200px;
+  }
+  img {
+    width: 250px;
+  }
+--- font-size (tamaño de fuente): ---
+
+h3 {
+    font-size: 10pt;
+}
+p {
+font-size: 14px;
+}
+a {
+font-size: 1.2em;
+}
+span {
+    font-size: 80%;
+}
+
+----overflow---
+
+    div {
+    overflow: scroll;
+}
+
+--- background ---
+p {
+    background: #ffffff url("cerezas.png") no-repeat fixed center;
+}
+--- background-color | background-image | background-position | background-size | background-repeat:---
+p {
+    background-color: blue;
+}
+div {
+    background-image: url("cerezas.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+-------border ------------
+button {
+    border: 2px dotted green;
+}
+div {
+    border: 1px solid #000000;
+}
+p {
+    border-right: 1px groove rgb(100,100,100);
+    border-left: 1px groove rgb(200,200,200);
+}
+
+--------- border-radius --------
+  button {
+    border-radius: 5px;
+  }
+
+
+
+
+
+*/
