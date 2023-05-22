@@ -1,0 +1,57 @@
+<!DOCTYPE html>       <!--- Esta línea entrega la version de html que se utiliza. Es una etiqueta de accesibilidad-->
+<html lang="Es"> <!-- Se puede definir el idioma para la página dentro de este comando-->
+    <!-- Cabeza-->
+    <head>
+            <meta charset="UTF-8!"> 
+            <title>
+                Pagina2
+            </title>
+    </head>
+    
+    <body>
+
+        <a href="./index.html"> Regresar a la pagina original </a>
+        <form>
+        <div>
+            <label> nombre: </label>
+            <input type="text" name="nombre_usuario" id="nombre" value="Nombre" required>
+        </div>
+        <div>
+            <label> apellido: </label>
+            <input type="text" name="apellido_usuario" id="apellido" value="Apellido" required>
+        </div>
+        <div>
+            <label> ¿Tienes mascotas? </label>
+            <select name="mascotas">
+                <option> Si </option>
+                <option> No </option>
+            </select>
+        </div>
+        <div>
+            <label> ¿Cuantas mascotas tienes? </label>
+            <select name="mascotas">
+                <option> 0 </option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+                <option> 5+ </option>
+            </select>
+        </div>
+        <div> 
+            <label>
+                Déjanos un comentario
+            </label>
+            <textarea name="comentario"> </textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+        <div>
+            <button type="submit">
+                Enviar v2
+            </button>
+        </div>
+    </form>
+    </body>
+</html>
