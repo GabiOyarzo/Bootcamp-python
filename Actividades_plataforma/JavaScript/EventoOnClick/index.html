@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Evento OnClick</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="encabezado">
+            <h1> Dojonary </h1>
+            <input type="text" name="busqueda" value="Search">
+            <button class="btn" id="btn_login" onclick="LogInOut(this)"> Login </button>
+        </div>
+        <div id="fondo">
+            <div class="columna1">
+                <div class="contenedor" id="def-1">
+                    <div id="def-1-c1">
+                        <h1> ninja </h1>
+                        <h5> noun </h5>
+                        <h4> Plural: ninjas </h4>
+                        <button id="btn-liked" onclick="alert('Ninja was liked')"> 13 likes</button>
+                    </div>
+                    <div id="def-1-c2">
+                        <p> A practitioner skilled in the <a href="#"> Japanese </a> art of <a href="#"> ninjutsu </a> </p>                        
+                    </div>
+                </div>
+                <div class="contenedor" id="def-2">
+                    <div id="def-1-c1">
+                        <h1> ninja </h1>
+                        <h5> noun </h5>
+                        <h4> Plural: ninjas </h4>
+                        <button id="btn-liked" onclick="alert('Ninja was liked')"> 37 likes</button>
+                    </div>
+                    <div id="def-1-c2">
+                        <p> A <a href="#"> programmer </a> who breaks down problems with <a href="#"> zen </a> -like focus </p>                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="columna2">
+                <div class="contenedor" id="def-3">
+                    <h1> Dojonary is defined by you
+                    </h1>
+                    <button id="btn-def" onclick=" hide(this)"> Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
