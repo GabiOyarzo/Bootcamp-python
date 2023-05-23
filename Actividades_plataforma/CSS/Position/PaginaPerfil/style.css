@@ -1,31 +1,29 @@
+/* General */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0px; margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+
+/* fondo pagina */
 body{
     background-color: azure;
 }
 
-/* barra de navegación */
+/* barra superior */
 .nav * {
     padding: 0;
     color: azure;
+    align-items: center;
+    list-style: none; 
 }
 .nav  {
     justify-content: space-around;
     background-color: rgb(0, 0, 0);
 }
-
 .nav, .nav-links {
     display: flex;
     flex-direction: row;
-}
-.nav-links {
-    align-items: center;
-    list-style: none; 
-}
-    
+}    
 .nav a{
     text-decoration: solid;
     font-weight:lighter;
@@ -33,10 +31,9 @@ body{
     margin: 10px;
 }
 .nav  .active {  
-    color: azure; 
     font-weight: bold;
+    color: azure;
 }
-
 .btn{
     align-self: center;
     background-color: rgb(23,162,184);
@@ -46,43 +43,40 @@ body{
     font-size: small;
     font-weight: bold;
 }
+/* contenedor grande */
+.contenedor-grande{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-/* Perfil usuario */
-
-.mainContainer {
-    display: flex;
+/* contenedor perfil */
+.contenedor-perfil{
+    display:flex;
     flex-direction: column;
-}
-
-
-.contenedor_perfil {
+    justify-content: space-between;
     width: 60%;
-    margin: 5% ;
+    margin: 5%;
 }
-
-.tarjeta-usuario {
+/* info perfil */
+.info-perfil{
     width: 100%;
-    background-color: azure;
-    margin-bottom: 20px;
+    background-color:  azure;
+    border: 2px solid rgb(167,167,167);
     border-radius: 5px;
-    font-size: 1.2rem;
-    overflow: hidden;
+    background-color:  azure;
     box-shadow: 0px 0px 2px 2px rgb(167,167,167);
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .encabezado {
     background-color: rgb(23,162,184);
     height: 100px;
+    width: 100%;
+    align-self: center;
+    border-radius: 5px;
 }
-
-.card-body {
-    padding: 20px;
-}
-.card-body p {
-    text-align: start;
-    font-size: smaller;
-}
-
 #photo_user {
     border-radius: 50%;
     border: 5px solid azure;
@@ -92,39 +86,43 @@ body{
     margin-left: 20px;
     position: absolute;
 }
-
 .icons {
     height: 15px;
 }
-
-a {
-    color: #3a81e6;
+.card-body {
+    padding: 20px;
+}
+.card-body p {
+    text-align: start;
+    font-size: smaller;
 }
 
-
-.contenedor_educacion{
-    width: 60%;
-    margin: 5% ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(167,167,167);
+/* info educación */
+.info-educacion{
+    width: 100%;
+    border: 2px solid rgb(167,167,167);
+    border-radius: 5px;
+    padding: 0px;
+    background-color:  azure;
     box-shadow: 0px 0px 2px 2px rgb(167,167,167);
+    position: relative;
+    margin-bottom: 10px;
 }
 .encabezado_edu{
-    background-color: black;
-    width: 99%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    align-self: center;
+    width: 100%;
     border-radius: 2px;
+    display: flex;
 }
 .encabezado_edu h1{
-    color: white;
+    color: azure;
     font-size: medium;
     margin: 5%;
 }
 
 .card-edu{
-    width: 99%;
     background-color: azure;
     border-radius: 2px;
 }
@@ -145,10 +143,99 @@ a {
     color: rgb(167,167,167);
 }
 
-.contenedor_solicitudes{
-    margin: 5% ;
-    position: absolute;
-    flex-direction: row;
-    background-color: rgb(167,167,167);
+/* contenedor contactos */
+
+.contenedor-contactos{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin: 5%;
+}
+/* solicitudes */
+
+.solicitudes, .contactos{
+    border: 2px solid rgb(167,167,167);
+    border-radius: 5px;
+    padding: 0px;
+    background-color:  azure;
     box-shadow: 0px 0px 2px 2px rgb(167,167,167);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.encabezado_contactos{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    align-self: center;
+    width: 100%;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+.encabezado_contactos #n-solicitudes {
+    border-radius: 50%;
+    width: 25px;
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+    background: rgb(167,167,167);
+    align-self: center;
+    text-align: center;
+    font-size: large;
+}
+
+.encabezado_contactos #solicitud-contactos{
+    color: rgb(167,167,167);
+    font-size: large;
+    align-self: center;
+}
+
+
+.solicitudes .icons {
+    height: 25px;
+}
+.photo-contact{
+    border-radius: 50%;
+    border: 2px solid azure;
+    box-shadow: 0px 0px 5px 0px black;
+    height: 30px;
+    position: relative;
+}
+
+#contacts-names{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-user #contacts-names  {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contactos,.button-more{
+    border: 2px solid rgb(167,167,167);
+    padding: 0px;
+    background-color:  azure;
+    box-shadow: 0px 0px 2px 2px rgb(167,167,167);
+    position: relative;
+}
+
+.button-more{
+    display: flex;
+    height: 30px;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.encabezado_contactos #n-amigos {
+    border-radius: 50%;
+    width: 25px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    background: rgb(167,167,167);
+    font-size: small
 }
