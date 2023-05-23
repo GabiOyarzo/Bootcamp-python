@@ -48,12 +48,16 @@ body{
 }
 
 /* Perfil usuario */
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .contenedor_perfil {
     width: 60%;
     margin: 5% ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .tarjeta-usuario {
@@ -143,10 +147,8 @@ a {
 
 .contenedor_solicitudes{
     margin: 5% ;
-    display: flexbox;
-    
-    justify-content: space-between;
-    flex-direction: column;
+    position: absolute;
+    flex-direction: row;
     background-color: rgb(167,167,167);
     box-shadow: 0px 0px 2px 2px rgb(167,167,167);
 }
