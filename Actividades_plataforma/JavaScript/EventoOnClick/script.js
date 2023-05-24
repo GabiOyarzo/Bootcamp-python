@@ -3,9 +3,14 @@
 // fecha: 23/05/2023
 // última actualización: 24/05/2023
 
-
+let estado = 0;
 function LogInOut(element) {
-    element.innerText = "Logout";
+    estado ++;
+    if (estado%2 == 0) {
+        element.innerText = "Login";
+    } else  if (estado%2 == 1) {
+        element.innerText = "LogOut";
+    }
 }
 
 function hide(element) {
