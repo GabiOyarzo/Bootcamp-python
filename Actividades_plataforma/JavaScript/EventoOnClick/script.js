@@ -3,12 +3,11 @@
 // fecha: 23/05/2023
 // última actualización: 24/05/2023
 
-let estado = 0;
 function LogInOut(element) {
-    estado ++;
-    if (estado%2 == 0) {
+    estado = element.innerText;
+    if ( estado == "LogOut") {
         element.innerText = "Login";
-    } else  if (estado%2 == 1) {
+    } else  if (estado == "Login") {
         element.innerText = "LogOut";
     }
 }
@@ -17,16 +16,10 @@ function hide(element) {
     element.remove();
 }
 
-let contador1 = 5;
-function AddCont1(element){
-    contador1 ++;
-    element.innerText = ( contador1 + " likes");
+function AddCont(element){
+    contador = parseInt(element.innerText);
+    contador ++;
+    element.innerText = ( contador + " likes");
     alert("Ninja was liked");
 };
 
-let contador2 = 17;
-function AddCont2(element){
-    contador2 ++;
-    element.innerText = ( contador2 + " likes");
-    alert("Ninja was liked");
-};
