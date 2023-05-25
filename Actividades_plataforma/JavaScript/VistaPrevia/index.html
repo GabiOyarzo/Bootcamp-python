@@ -25,57 +25,51 @@
 
         <!-- left column -->
         <div class="col-l">
-
-            <!-- this is a placeholder replace it with a real video -->
+            <!-- this is a placeholder replace it with a real video 
             <figure class="placeholder">
-                <video width=3840 height=2160 onmouseover="play(this)" onmouseout="pause(this)">
-                    <source scr="https://www.pexels.com/video/aerial-view-of-motorboat-on-seacoast-11932221/"> 
-                </video>
-            </figure>
+                <svg style="text-anchor:middle;" width="720" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect>
+                    <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
+                </svg>
+            </figure> -->
+            <video class="video" width="800" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
+                <source src="assets/pexels-polina-kovaleva-7573692-3840x2160-30fps.mp4">
+            </video>
             <!-- video info -->
             <div class="row">
                 <div class="start">
-                    <h1>Example Video Title</h1>
-                    <h3>1.3K Views | June, 18, 2021</h3>
+                    <h1>  Waves Crashing to a Rocky Shore </h1>
+                    <h3> 360k Views | April, 19, 2021 </h3>
                     <div class="user">
-                        <img src="assets/user.png" alt="user-circle" class="avatar-s">
-                        <span class="user-name">Example User Name</span>
+                        <img src="https://images.pexels.com/users/avatars/3511482/polina-kovaleva-675.jpeg?auto=compress&fit=crop&h=130&w=130&dpr=1" alt="user-circle" class="avatar-s">
+                        <span class="user-name"> Polina Kovaleva</span>
                     </div>
                 </div>
                 <button class="btn">Subscribe</button>
             </div>
-
         </div>
-
         <!-- right column -->
         <div class="col-r">
-
             <h3 class="sub-header">Up Next</h3>
-
             <div class="video-small">
-                <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
-                <span class="video-title">Not a Rick Roll</span>
+                <video src="assets/pexels-ivan-a-11836212-3840x2160-60fps.mp4" alt="video placeholder" class="vid-s" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+                <span class="video-title"> Waves Crashing on Shore </span>
             </div>
-
             <div class="video-small">
-                <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
-                <span class="video-title">10 Facts About ET's Cat!</span>
+                <video src="assets/pexels-luigi-matta-11909679-2560x1440-60fps.mp4" alt="video placeholder" class="vid-s" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+                <span class="video-title"> Waves Crashing on a Rocky Shore </span>
             </div>
-
             <div class="video-small">
-                <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
-                <span class="video-title">5 Cosplay Tips</span>
+                <video src="assets/pexels-ruvim-miksanskiy-1390942-4096x2160-24fps.mp4" alt="video placeholder" class="vid-s" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+                <span class="video-title"> Waves Crashing </span>
             </div>
-
             <div class="video-small">
-                <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
-                <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+                <video src="assets/pexels-danilo-riba-5192852-3840x2160-24fps.mp4" alt="video placeholder" class="vid-s" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+                <span class="video-title"> Sea waves coming to shore </span>
             </div>
-
         </div>
-
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

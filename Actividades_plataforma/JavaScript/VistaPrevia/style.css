@@ -90,7 +90,9 @@ body {
 }
 
 .avatar-s {
-    height: 64px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 3px #000;
 }
 
 .user-name {
@@ -117,9 +119,17 @@ body {
 .vid-s {
     width: 170px;
     margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 10%;
 }
 
 .video-title {
     font-size: 1.2rem;
     font-weight: 900;
+}
+
+.video {
+    border-radius: 20px;
+    border: 2px solid rebeccapurple;
+    box-shadow: 0px 0px 5px 3px rebeccapurple;
 }
