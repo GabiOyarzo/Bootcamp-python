@@ -34,30 +34,34 @@ Gabriela Oyarzo Escudero
                     <div id="arriba">
                         <h2> Gabriela </h1>
                         <h3 id="like-gabriela"> 3 like (s) </h3>
-                        <button id="btn-liked" onclick=" AddCont('.contenedor#cont1 h3')"> Like </button>
+                        <button id="btn-liked" onclick=" AddCont('.contenedor #like-gabriela')"> Like </button>
                     </div>
                     <div id="abajo">
-                        <video src="img/VID-20161110-WA0005.mp4" class="video-lin" id="escala"> </video>
+                        <video muted onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" src="img/VID-20161110-WA0005.mp4" class="video-lin" id="escala"> </video>
+                        <h3> Primera vez bajando escalera </h3>
+
                     </div>
                 </div>
                 <div class="contenedor" id="cont2">
                     <div id="arriba">
                         <h2> Fernando </h1>
                         <h3 id="like-fernando"> 7 like (s) </h3>
-                        <button id="btn-liked" onclick=" AddCont('.contenedor#cont2 h3')"> Like </button>
+                        <button id="btn-liked" onclick=" AddCont('.contenedor #like-fernando')"> Like </button>
                     </div>
                     <div id="abajo"> 
-                        <video src="img/VID-20161201-WA0003.mp4" class="video-lin" id="peluche"> </video>
+                        <video muted onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" src="img/VID-20161201-WA0003.mp4" class="video-lin" id="peluche"> </video>
+                        <h3> Jugando con peluche </h3>
                     </div>
                 </div>
                 <div class="contenedor" id="cont3">
                     <div id="arriba">
                         <h2> Tomás </h1>
                         <h3 id="like-tomas"> 5 like (s) </h3>
-                        <button id="btn-liked" onclick=" AddCont('.contenedor#cont3 h3')"> Like </button>
+                        <button id="btn-liked" onclick=" AddCont('.contenedor #like-tomas')"> Like </button>
                     </div>
-                    <div id="abajo">
-                        <video src="img/VID-20170103-WA0002.mp4" class="video-lin" id="aullando"> </video>
+                    <div id="abajo" >
+                        <video onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" src="img/VID-20170103-WA0002.mp4" class="video-lin" id="aullando"> </video>
+                        <h3> Primer aullido </h3>
                     </div>
                 </div>
             </div>

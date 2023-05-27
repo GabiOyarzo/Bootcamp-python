@@ -78,9 +78,9 @@ button{
     justify-content: space-between;
     margin-bottom: 5%;
 }
-#arriba{
+#abajo{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5%;

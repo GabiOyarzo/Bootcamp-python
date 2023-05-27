@@ -1,6 +1,6 @@
 // Javascript de Actividad  me gusta 
 // Gabriela Oyarzo Escudero
-// última actualización: 26/05/2023
+// última actualización: 27/05/2023
 
 function LogInOut() {
     estado = document.querySelector("#btn_login")
@@ -17,3 +17,11 @@ function AddCont(selector) {
     contador++;
     aux1.innerText = contador + " like(s)";
 };
+
+function playVideo(element){
+    element.play();
+}
+
+function pauseVideo(element){
+    element.pause();
+}
