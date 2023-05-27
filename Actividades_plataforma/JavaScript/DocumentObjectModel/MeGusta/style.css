@@ -1,0 +1,104 @@
+* {
+    margin: 0px; padding: 0px;
+    font-family: 'Pangolin', cursive;
+}
+#fondo {
+    background-image: linear-gradient(to top, #FAE3FD 0%, #DDD7FC 100% );
+    width: 100%;
+    height: 100%;
+}
+.encabezado{
+    background-image: linear-gradient(to top, #C1A8FB 0%, #DBC8FF 100% );
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #8172C5;
+}
+/* Generales */
+
+button{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 0px 1px  rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: normal;
+    border-radius: 70%;
+}
+.contenedor{
+    border: 2px solid #8172C5;
+    margin: 20%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    box-shadow: #8172C5 0px 0px 2px 0px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Especificos*/
+
+.btn_like{
+    background-color: #6e3eae;
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+/* Encabezado*/ 
+
+.encabezado button{
+    background-color: #BFACE2 ;
+    height: 30px;
+	width: 100px;
+    color:  #8172C5;
+    border: 2px solid #8172C5;
+    box-shadow: 3px 3px 0px 1px  #8172C5;
+    font-size: medium;
+    font-weight: normal;
+}
+
+.encabezado input{
+    color: #565555;
+    border: 2px solid #8172C5;
+    width: 50%;
+    height: 20px;
+}
+
+/* Contenedores */ 
+
+#fondo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#Profile-lin{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#Lin-1{
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid #8172C5;
+    background-color: #8172C5;
+    
+}
+.video-lin{
+    width: 100px;
+    border-radius: 20%;
+    border: #8172C5 2px solid;
+    background-color: #8172C5;
+}
+
+#title-page{
+    font-size: x-large;
+    text-align: center;
+    background-color: #C1A8FB;
+    border: #6e3eae 2px solid;
+    padding: 20px;
+}

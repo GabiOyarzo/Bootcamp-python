@@ -1,0 +1,60 @@
+<!-- Actividad Me gusta
+Gabriela Oyarzo Escudero
+última actualización: 25/05/2023
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>  &#x10e6 Lin &#x10e6  </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="encabezado">
+            <h1> &#x10e6 Lin &#x10e6  </h1>
+            <input type="text" name="search" placeholder="search">
+            <button class="btn" id="btn_login" onclick="LogInOut()"> Login </button>
+        </div>
+        <h1 id="title-page"> Momentos de Lin </h1>
+        <div id="fondo">
+            <div class="columna1">
+                <div class="contenedor" id="Profile-lin">
+                    <img src="img/16996522_10210567152726972_9061783550253343447_n.jpg" alt="Lin-playa" id="Lin-1">
+                    <h1> Lin </h1>
+                    <p> Hembra </p>
+                    <p> Mestiza </p>
+                    <p> 6 años </p>
+                </div>
+            </div>
+            <div class="columna2">
+                <div class="contenedor" id="btn-1">
+                    <video src="img/VID-20170103-WA0002.mp4" class="video-lin" id="aullando"> </video>
+                    <div>
+                        <h1> Lin aullando </h1>
+                        <h4 id="aullando"> 0 like(s) </h4>
+                        <button class="btn_like" id="btn_like1" onclick="AddCont()"> Like </button>
+                    </div>
+                </div>
+                <div class="contenedor" id="btn-2">
+                    <video src="img/VID-20161110-WA0005.mp4" class="video-lin" id="escala"> </video>
+                    <div>
+                        <h1> Lin bajando escala </h1>
+                        <h4 id="escala"> 0 like(s) </h4>
+                        <button class="btn_like" id="btn_like2" onclick="AddCont()"> Like </button>
+                    </div>
+                </div>
+                <div class="contenedor" id="btn-3">
+                    <video src="img/VID-20161201-WA0003.mp4" class="video-lin" id="peluche"> </video>
+                    <div>
+                        <h1> Lin con peluche </h1>
+                        <h4 id="escala"> 0 like(s) </h4>
+                        <button class="btn_like" id="btn_like3" onclick="AddCont()"> Like </button>
+                    </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0px; padding: 0px;
+    font-family: 'Pangolin', cursive;
+    color: #6e3eae;
+}
+#fondo {
+    background-image: linear-gradient(to top, #FAE3FD 0%, #DDD7FC 100% );
+    width: 100%;
+    height: 100%;
+}
+.encabezado{
+    background-image: linear-gradient(to top, #C1A8FB 0%, #DBC8FF 100% );
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #6e3eae;
+}
+/* Generales */
+
+button{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 0px 1px  rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: normal;
+}
+.contenedor{
+    border:  2px solid #6e3eae;;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    text-align: center;
+}
+
+/* Especificos*/
+
+#btn-liked{
+    background-color: #6e3eae;
+	height: 30px;
+	width: 80px;
+    color: black;
+    font-weight: bolder;
+}
+
+/* Encabezado*/ 
+
+.encabezado button{
+    color:  #8172C5;
+    border: 2px solid #8172C5;
+    box-shadow: 3px 3px 0px 1px  #8172C5;	height: 30px;
+    background-color: #BFACE2 ;
+	width: 100px;
+}
+
+.encabezado input{
+    color: #C1C1C1;
+    border: 2px solid black;
+    width: 50%;
+    height: 20px;
+}
+
+/* Contenedores */ 
+
+#fondo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+
+
+#arriba{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+#arriba{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.photo{
+    width: 50%;
+    border-radius: 100%;
+    border: 5px solid #8172C5;
+    background-color: #6e3eae;
+}
+
+.video-lin{
+    width: 50%;
+}
+#columna1, #columna2{
+    width: 100%;
+}
+
+#title1{
+    text-align: center;
+}

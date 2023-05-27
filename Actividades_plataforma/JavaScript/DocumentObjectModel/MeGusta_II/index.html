@@ -1,0 +1,66 @@
+<!-- HTML Actividad Me gusta
+Gabriela Oyarzo Escudero
+última actualización: 26/05/2023
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Likes </title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="encabezado">
+            <h1>  Islin   </h1>
+            <input type="text" name="busqueda" value="Search">
+            <button class="btn" id="btn_login" onclick="LogInOut()"> Login </button>
+        </div>
+        <div class="contenedor-fondo" id="fondo">
+            <div class="columna" id="columna1">
+                <div class="contenedor" id="profile">
+                    <img src="img/IMG-20161216-WA0002.jpeg" alt="lin-bb" class="photo" id="avatar">
+                    <h1> Lin </h1>
+                    <a href="#" > change avatar</a>
+                </div>
+            </div>
+            <div class="columna" id="columna2">
+                <h1 id="title1"> Videos </h1>
+                <div class="contenedor" id="cont1">
+                    <div id="arriba">
+                        <h2> Gabriela </h1>
+                        <h3 id="like-gabriela"> 3 like (s) </h3>
+                        <button id="btn-liked" onclick=" AddCont('.contenedor#cont1 h3')"> Like </button>
+                    </div>
+                    <div id="abajo">
+                        <video src="img/VID-20161110-WA0005.mp4" class="video-lin" id="escala"> </video>
+                    </div>
+                </div>
+                <div class="contenedor" id="cont2">
+                    <div id="arriba">
+                        <h2> Fernando </h1>
+                        <h3 id="like-fernando"> 7 like (s) </h3>
+                        <button id="btn-liked" onclick=" AddCont('.contenedor#cont2 h3')"> Like </button>
+                    </div>
+                    <div id="abajo"> 
+                        <video src="img/VID-20161201-WA0003.mp4" class="video-lin" id="peluche"> </video>
+                    </div>
+                </div>
+                <div class="contenedor" id="cont3">
+                    <div id="arriba">
+                        <h2> Tomás </h1>
+                        <h3 id="like-tomas"> 5 like (s) </h3>
+                        <button id="btn-liked" onclick=" AddCont('.contenedor#cont3 h3')"> Like </button>
+                    </div>
+                    <div id="abajo">
+                        <video src="img/VID-20170103-WA0002.mp4" class="video-lin" id="aullando"> </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
