@@ -1,0 +1,37 @@
+
+
+/* Boton */
+
+.encabezado button{
+    color:  #8172C5;
+    border: 2px solid #8172C5;
+    box-shadow: 3px 3px 0px 1px  #8172C5;	height: 30px;
+    background-color: #BFACE2 ;
+	width: 100px;
+}
+
+
+/* Filas */
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo{
+    width: 50%;
+    border-radius: 100%;
+    border: 5px solid #8172C5;
+    background-color: #6e3eae;
+}
+
+
+.nav  {
+    justify-content: space-around;
+    background-color: #025F70;
+    height: 80px;
+    align-items: center;
+}
