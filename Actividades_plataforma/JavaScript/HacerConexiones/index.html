@@ -26,13 +26,14 @@
                         <img src="./images/jane-m.jpg" alt="photo_user" id="photo_user" class="photo">
                     </div>
                     <div class="card-body">
-                        <h1>Jane Doe</h1>
-                        <h3> <img src="icons/map-marker.png" alt="pin" class="icons"> Seattle </h3>
-                        <p>Developer | Engineer | Problem Solver<br>
+                        <h1 id="profile-name">Jane Doe</h1>
+                        <h3 id="city"> <img src="icons/map-marker.png" alt="pin" class="icons"> Seattle </h3>
+                        <p id="profile-info-1"> Developer | Engineer | Problem Solver<br>
                             Master of shadows and the Internet!</p>
-                        <p> <a href="#"> <img src="icons/gear.png" alt="gear" class="icons"> edit profile </a> </p>
+                        <p> <a onclick="EditProfile()" id="EditProfile" href="#"> <img src="icons/gear.png" alt="gear" class="icons"> edit profile </a> </p>
                     </div>
                 </div>
+                
                 <div class="info-educacion"> 
                     <!-- Encabezado -->
                     <div class="encabezado_edu">
@@ -53,12 +54,20 @@
                         <h1 id="solicitud-contactos">Connection Requests</h1>
                     </div>
                     <div class="card-solicitudes" id="Todd">
-                        <h3 id="contacts-names"> <img src="images/todd-s.jpg" alt="todd-s" class="photo-contact"> Todd E <img src="icons/accept-circle.png" alt="accept" class="icons"> <img src="icons/close-circle.png" alt="close" class="icons">  </h3>
+                        <h3 class="contacts-names">
+                            <img src="images/todd-s.jpg" alt="todd-s" class="photo-contact"> Todd E 
+                            <img onclick="AcceptRequest('Todd')" src="icons/accept-circle.png" alt="accept" class="icons"> 
+                            <img onclick="RejectRequest('Todd')" src="icons/close-circle.png" alt="close" class="icons">  
+                        </h3>
                     </div>
                     <div class="card-solicitudes" id="Phil">
-                        <h3 id="contacts-names"> <img src="images/phil-s.jpg" alt="phil-s" class="photo-contact"> Phil K <img src="icons/accept-circle.png" alt="accept" class="icons"> <img src="icons/close-circle.png" alt="close" class="icons">  </h3>
+                        <h3 class="contacts-names">
+                            <img src="images/phil-s.jpg" alt="phil-s" class="photo-contact"> Phil K 
+                            <img onclick="AcceptRequest('Phil')" src="icons/accept-circle.png" alt="accept" class="icons"> 
+                            <img onclick="RejectRequest('Phil')" src="icons/close-circle.png" alt="close" class="icons">  
+                        </h3>
                     </div>
-                </div>
+                </div>         
                 <div class="contactos">
                     <div class="encabezado_contactos">
                         <h1 id="n-amigos"> 450 </h1>
