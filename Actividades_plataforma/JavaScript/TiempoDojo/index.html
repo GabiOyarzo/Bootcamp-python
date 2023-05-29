@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tiempo dojo </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor" id="pagina">
+        <div class="contenedor" id="nav">
+            <h1> DojoWeather </h1>
+            <ul id="ciudades"> 
+                <li onclick="ChangeCity('#city1')" id="city1"> Burbank </li>
+                <li onclick="ChangeCity('#city2')" id="city2"> Chicago </li>
+                <li onclick="ChangeCity('#city3')" id="city3"> Dallas </li>
+            </ul>
+        </div>
+        <div class="contenedor" id="contenido">
+            <div class="contenedor" id="ciudad">
+                <div class="subcontenedor" id="nombre ciudad">
+                    <h1> San José </h1>
+                </div>
+                <div class="subcontenedor" id="unidades">
+                    <p> show temperature in </p>
+                    <select onchange="ConvertTemperature(this.value, '.maxT', '.minT')">
+                        <option value="Celsius" > °C </option>
+                        <option value="Fahrenheit"> °F </option>
+                        <option value="Kelvin"> °K </option>
+                    </select>
+                </div>
+            </div>
+            <div class="contenedor" id="temperaturas">
+                <div class="subcontenedor-dia" id="dia1">
+                    <h2> Today </h2>
+                    <img src="assets/some_rain.png" class="img-tiempo">
+                    <h3> some rain </h3>
+                    <div class="subcontenedor-t" id="dia1">
+                        <p class="maxT"> 24° </p>
+                        <p class="minT"> 18° </p>
+                    </div>
+                </div>
+                <div class="subcontenedor-dia" id="dia2">
+                    <h2> Tomorrow </h2>
+                    <img src="assets/some_sun.png" class="img-tiempo">
+                    <h3> some sun </h3>
+                    <div class="subcontenedor-t" id="dia1">
+                        <p class="maxT"> 27° </p>
+                        <p class="minT"> 19° </p>
+                    </div>
+                </div>
+                <div class="subcontenedor-dia" id="dia3">
+                    <h2> Friday </h2>
+                    <img src="assets/some_clouds.png" class="img-tiempo">
+                    <h3> some clouds </h3>
+                    <div class="subcontenedor-t" id="dia1">
+                        <p class="maxT"> 21° </p>
+                        <p class="minT"> 16° </p>
+                    </div>
+                </div>
+                <div class="subcontenedor-dia" id="dia4">
+                    <h2> Saturday </h2>
+                    <img src="assets/some_sun.png" class="img-tiempo">
+                    <h3> some sun </h3>
+                    <div class="subcontenedor-t" id="dia1">
+                        <p class="maxT"> 26° </p>
+                        <p class="minT"> 21° </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor" id="coockie">
+        <img src="assets/cookie.png" class="img-coockie">
+        <div id="text-coockie">
+            <h1> Stop! Coockie time </h1>
+            <p> We use coockies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="AcceptCoockie()" class="btn" id="btn-coockie"> I Accept </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
