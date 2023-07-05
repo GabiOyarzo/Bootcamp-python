@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patio de juegos</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: blueviolet;
+            font-size: 100px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        body {
+            height: 100%;
+        }
+        
+        .Contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            flex-direction: row;
+            align-content: center;
+            margin: 0 10%;
+        }
+        
+        .caja {
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background-color: {{ color }};
+        }
+        
+        .ContenedorExterno {
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center;
+            align-content: center;
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div class="ContenedorExterno">
+        <div class="Contenedor">
+            {% for x in range(1, times+1) %}
+            <div class="caja"></div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
