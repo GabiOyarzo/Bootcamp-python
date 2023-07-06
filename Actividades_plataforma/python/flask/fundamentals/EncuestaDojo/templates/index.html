@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dojo Survey Index </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="contenedor">
+        <h1> Registration Form </h1>
+        <form action="/process" method="post" id="forma-texto">
+            <div>
+                <label> Your Name: </label>
+                <input type="text" name="nombre">
+            </div>
+            <div>
+                <label> Dojo Location: </label>
+                <select name="dojo_location">
+                    <option> Con-Con </option>
+                    <option> Quilpué </option>
+                    <option> Valparaíso </option>
+                    <option> Villa Alemana </option>
+                    <option> Viña del Mar </option>
+                </select>
+            </div>            
+            <div>
+                <label> Favorite Language: </label>
+                <select name="favorite_language">
+                    <option>HTML</option>
+                    <option>Javascript</option>
+                    <option>Python</option>
+                    <option>Matlab</option>
+                    <option>C++/C#</option>
+                    <option>Java</option>
+                </select>
+            </div>
+            <!-- Área de texto -->
+            <div>
+                <label> Comment (optional): </label>
+                <div> 
+                    <textarea name="comment" cols="30" rows="3"></textarea>
+                </div>
+            </div>
+            <input id="btn-submit" type="submit" value="submit" src="index1.html">
+        </form>
+    </div>
+</body>
+</html>

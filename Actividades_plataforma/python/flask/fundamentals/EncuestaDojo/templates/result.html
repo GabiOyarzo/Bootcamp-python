@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dojo Survey Result </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+</head>
+<body>
+    <div class="contenedor" id="cont1">
+        <h1> Submitted info </h1>
+        <table id="info-usuario">
+            <tr>
+                <th>Nombre:</th>
+                <td>{{ nombre }}</td>
+            </tr>
+            <tr>
+                <th>Dojo Location:</th>
+                <td>{{ dojo_location }}</td>
+            </tr>
+            <tr>
+                <th>Favorite Language:</th>
+                <td>{{ favorite_language }}</td>
+            </tr>
+            <tr>
+                <th>Comment:</th>
+                <td>{{ comment }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
