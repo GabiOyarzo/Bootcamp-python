@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .boton {
+            margin: 50px 100px;
+            height: 200px;
+            width: 300px;
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 3px 3px 0px 1px rgb(0, 0, 0);
+            font-size: medium;
+            font-weight: normal;
+            align-self: center;
+        }
+        #btn-aumento {
+            background-color: cyan;
+        }
+        #btn-reinicio {
+            background-color: pink;
+        }
+        a {
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+            font-style: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de visitas</h1>
+    <h3>Se ha ingresado {{ visitas }} veces</h3>
+    <div>
+        <h3>Contador: {{ contador }}</h3>
+        <a class="boton" id="btn-aumento" href="{{ url_for('incrementar', num=2) }}"> + 2 visitas</a>
+        <a class="boton" id="btn-reinicio" href="{{ url_for('resetear') }}">Reiniciar contador</a>
+    </div>
+</body>
+</html>
