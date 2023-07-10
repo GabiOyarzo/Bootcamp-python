@@ -5,8 +5,8 @@
     
 }
 .dojos{
-   border: 1px solid black;
-   padding: 15px; 
+    border: 1px solid black;
+    padding: 15px; 
 }
 .seccion_izquierda, .seccion_derecha{
     flex: 1;

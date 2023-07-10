@@ -1,43 +1,43 @@
-# un cursor es el objeto que usamos para interactuar con la base de datos
+# a cursor is the object we use to interact with the database
 import pymysql.cursors
-# esta clase nos dará una instancia de una conexión a nuestra base de datos
+# this class will give us an instance of a connection to our database
 class MySQLConnection:
     def __init__(self, db):
-        # cambiar el usuario y la contraseña según sea necesario
+        # change the user and password as needed
         connection = pymysql.connect(host = 'localhost',
                                     user = 'root', 
-                                    password = 'root', 
+                                    password = 'rootroot', 
                                     db = db,
                                     charset = 'utf8mb4',
                                     cursorclass = pymysql.cursors.DictCursor,
                                     autocommit = True)
-        # establecer la conexión a la base de datos
+        # establish the connection to the database
         self.connection = connection
-    # el método para consultar la base de datos
+    # the method to query the database
     def query_db(self, query, data=None):
         with self.connection.cursor() as cursor:
             try:
                 query = cursor.mogrify(query, data)
                 print("Running Query:", query)
-                cursor.execute(query, data)
+                executable = cursor.execute(query, data)
                 if query.lower().find("insert") >= 0:
-                    # las consultas INSERT devolverán el NÚMERO DE ID de la fila insertada
+                    # INSERT queries will return the ID NUMBER of the row inserted
                     self.connection.commit()
                     return cursor.lastrowid
                 elif query.lower().find("select") >= 0:
-                    # las consultas SELECT devolverán los datos de la base de datos como una LISTA DE DICCIONARIOS
+                    # SELECT queries will return the data from the database as a LIST OF DICTIONARIES
                     result = cursor.fetchall()
                     return result
                 else:
-                    # las consultas UPDATE y DELETE no devolverán nada
+                    # UPDATE and DELETE queries will return nothing
                     self.connection.commit()
             except Exception as e:
-                # si la consulta falla, el método devolverá FALSE
+                # if the query fails the method will return FALSE
                 print("Something went wrong", e)
                 return False
             finally:
-                # cerrar la conexión
+                # close the connection
                 self.connection.close() 
-# connectToMySQL recibe la base de datos que estamos usando y la usa para crear una instancia de MySQLConnection
+# connectToMySQL receives the database we're using and uses it to create an instance of MySQLConnection
 def connectToMySQL(db):
     return MySQLConnection(db)
