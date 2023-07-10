@@ -6,8 +6,8 @@ class MySQLConnection:
     def __init__(self, db):
         # cambiar el usuario y la contraseña según sea necesario
         connection = pymysql.connect(host='localhost',
-                                    user='root', 
-                                    password='root', 
+                                    user='root',
+                                    password='root',
                                     db=db,
                                     charset='utf8mb4',
                                     cursorclass=pymysql.cursors.DictCursor,
@@ -15,31 +15,31 @@ class MySQLConnection:
         # establecer la conexión a la base de datos
         self.connection = connection
 
-    # el método para consultar la base de datos
-    def query_db(self, query, data=None):
+    # el método para consultar o actualizar la base de datos
+    def execute_query(self, query, data=None):
         with self.connection.cursor() as cursor:
             try:
                 query = cursor.mogrify(query, data)
                 print("Running Query:", query)
-                cursor.execute(query, data)
-                if query.lower().find("insert") >= 0:
-                    # las consultas INSERT devolverán el NÚMERO DE ID de la fila insertada
-                    self.connection.commit()
-                    return cursor.lastrowid
-                elif query.lower().find("select") >= 0:
-                    # las consultas SELECT devolverán los datos de la base de datos como una LISTA DE DICCIONARIOS
+                if query.lower().startswith(("select", "show", "describe")):
+                    # consulta de selección
+                    cursor.execute(query, data)
                     result = cursor.fetchall()
                     return result
                 else:
-                    # las consultas UPDATE y DELETE no devolverán nada
+                    # consulta de actualización
+                    cursor.execute(query, data)
                     self.connection.commit()
+                    affected_rows = cursor.rowcount
+                    return affected_rows
             except Exception as e:
                 # si la consulta falla, el método devolverá FALSE
-                print("Something went wrong", e)
+                print("Something went wrong:", e)
                 return False
-            finally:
-                # cerrar la conexión
-                self.connection.close() 
+
+    def close(self):
+        # cerrar la conexión
+        self.connection.close()
 
 # connectToMySQL recibe la base de datos que estamos usando y la usa para crear una instancia de MySQLConnection
 def connectToMySQL(db):
